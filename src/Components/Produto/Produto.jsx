@@ -43,7 +43,7 @@ const Produto = () => {
       <div>
         <h1>{produto.nome}</h1>
         <span className={styles.preco}>R$ {produto.preco}</span>
-        {/* <p className={styles.descricao}>{produto.descricao}</p> */}
+        <p className={styles.descricao}>{produto.descricao}</p>
       </div>
     </section>
   );
