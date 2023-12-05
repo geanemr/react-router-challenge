@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Produtos.module.css";
+import { Link } from "react-router-dom";
+import Head from "../Head/Head";
 
 const Produtos = () => {
   const [produtos, setProdutos] = React.useState(null);
@@ -14,14 +16,18 @@ const Produtos = () => {
     return null;
   }
   return (
-    <div className={styles.produtos}>
+    <section className={styles.produtos + ' animeLeft'}>
+      <Head 
+       title="Ranek"
+       description="Descrição do site Ranek"
+      />
       {produtos.map((produto) => (
-        <div key={produto.id}>
-          <h1>{produto.nome}</h1>
+        <Link to={`produto/${produto.id}`} key={produto.id}>
+          <h1 className={styles.nome}>{produto.nome}</h1>
           <img src={produto.fotos[0].src} alt={produto.fotos[0].titulo} />
-        </div>
+        </Link>
       ))}
-    </div>
+    </section>
   );
 };
 export default Produtos;
