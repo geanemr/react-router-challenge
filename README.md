@@ -24,7 +24,7 @@
   </div>
 
   ---
-## 1. Resumo da aplicação
+## Resumo da aplicação
 Site criado no curso de React da Origamid, com o objetivo de exercitar os estudos em React Router.
 
 Para esta aplicação é utilizada uma API com informações sobre determinados produtos, utilizado o fetch para renderização dos produtos na tela e o router para gerenciamento das rotas.
